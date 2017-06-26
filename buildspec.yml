@@ -2,19 +2,19 @@ version: 0.1
 
 phases:
   install:
-      commands:
+    commands:
         - echo Nothing to do in the install phase...
   pre_build:
-      commands:
+    commands:
         - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - gradlew --debug --stacktrace build
-      - gradlew assemble
+      - root/./gradlew --debug --stacktrace build
+      - root/./gradlew assemble
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - test2/app/**/*
+    - test.apk
   discard-paths: yes
