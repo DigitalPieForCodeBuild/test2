@@ -9,8 +9,8 @@ phases:
         - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - root/./gradlew --debug --stacktrace build
-      - root/./gradlew assemble
+      - gradlew --debug --stacktrace build
+      - gradlew assemble
   post_build:
     commands:
       - echo Build completed on `date`
