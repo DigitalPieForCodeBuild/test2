@@ -1,0 +1,17 @@
+version: 1.0
+
+environment_variables:
+  plaintext:
+    phase: "alpha"
+
+phases:
+  pre_build:
+    commands:
+      - mvn clean
+    build:
+      commands:
+        - mvn package
+artifacts:
+  files:
+    - target/DigitalPieForCodeBuild.war
+  discard-paths: yes
