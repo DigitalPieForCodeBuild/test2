@@ -24,5 +24,5 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - CodeBuildTest/**/*
+    - app/build/outputs/apk/*
   discard-paths: yes
