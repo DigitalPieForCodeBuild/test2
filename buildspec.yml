@@ -26,3 +26,4 @@ phases:
 artifacts:
   files:
     - app/build/outputs/apk/app-debug.apk
+    discard-paths: yes
