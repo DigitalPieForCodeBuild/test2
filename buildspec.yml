@@ -24,5 +24,6 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - target/aws-code-build-android.jar
+    - app/build/outputs/apk/app-debug.apk
+    - app/build/outputs/apk/app-release-unsigned.apk
   discard-paths: yes
